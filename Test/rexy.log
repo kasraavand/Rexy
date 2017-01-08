@@ -1,0 +1,62 @@
+ERROR:root:error: (-1, 'Failed to connect', 'src/main/aerospike/as_cluster.c', 459)
+ERROR:root:error: (-1, 'Failed to connect', 'src/main/aerospike/as_cluster.c', 459)
+ERROR:root:Product with id game_15 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_15 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_15 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_15 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_15 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_15 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_15 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_3 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id game_19 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id app_17 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id app_28 doesn't
+                    have seimilar_products key.
+ 'sim_products'
+ERROR:root:Product with id app_28 doesn't
+                    have seimilar_products key.
+ 'sim_products'
