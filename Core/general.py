@@ -1,7 +1,7 @@
 from Rexy.config import max_tag_density
 
 
-def cal_sim_product(self, tags1, tags2, return_diff=True):
+def cal_sim_product(tags1, tags2, return_diff=True):
     key1 = tags1.keys()
     key2 = tags2.keys()
     common_keys = key1 & key2
