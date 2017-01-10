@@ -4,6 +4,7 @@ p = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 sys.path.append(os.path.dirname(p))
 
 from Rexy.Profile.similar.RFY.user_profile import Recommendation
+from Rexy.Profile.similar.RFY.product_profile import Recommendation as PPRecommendation
 from Rexy.Core.similar.pre_analyzer import (User as pre_user_analyzer,
                                             Product as pre_product_analyzer)
 import random
@@ -124,6 +125,27 @@ def user_profile():
             json.dump(['####' * 10], f, indent=4)
 
 
+def product_profile():
+    importer = pre_analyzed_importer.PreImporter(db_name='pre_analyze')
+    users = [u[2] for u in importer.import_user()]
+    products = [p[2] for p in importer.import_product()]
+
+    user = random.sample(users, 1)[0]
+    product = random.sample(products, 1)[0]
+
+    recom = PPRecommendation(db_name='pre_analyze',
+                             top_tag_number=7,
+                             top_related_products=5,
+                             user=user,
+                             product=product)
+
+    recom_prods = recom.recom_from_tags()
+    with open('product.json', 'w') as f1, open('user.json', 'w') as f2, open('recom_prods.json', 'w') as f3:
+        json.dump({'tags': product['tags'], 'id': product['id']}, f1, indent=4)
+        json.dump({'tags': user['tags'], 'id': user['id']}, f2, indent=4)
+        json.dump([{'tags': i['tags'], 'id': i['id']} for i in recom_prods if isinstance(i, dict)], f3, indent=4)
+
 if __name__ == '__main__':
     # initialize()
-    user_profile()
+    # user_profile()
+    product_profile()
