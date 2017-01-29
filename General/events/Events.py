@@ -41,3 +41,17 @@ class Event:
         density = sum(t / max_tag_density for t in common_tags) / len(common_tags)
         affinity = tag_factor * density
         return affinity
+
+
+class User:
+    """Recommendations for users based on events."""
+
+    def __init__(self, *args, **kwargs):
+        pass
+
+
+class Product:
+    """Recommendations on product profiles based on events."""
+
+    def __init__(self, *args, **kwargs):
+        pass

@@ -2,4 +2,8 @@
 
  ----------
 
+Rexy is a kind of a wild beast and may doesn't seem friendly at first sight. But you can bring him around using [UPeT](https://github.com/kasramvd/UPeT).
+
+ -----------
+ 
 ![26c982832302ac96d00bab52acbd6537](https://cloud.githubusercontent.com/assets/5694520/20237512/bd2790b0-a8e9-11e6-865d-a9f2be1f5ff2.jpg)

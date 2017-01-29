@@ -1,3 +1,4 @@
+"""Logging module, for Rexy."""
 import logging
 
 logging.basicConfig(filename='rexy.log', level=logging.DEBUG)

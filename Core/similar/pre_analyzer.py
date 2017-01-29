@@ -121,6 +121,22 @@ class User(Product):
                 return p['sim_products'].get(p1_id, {}).get('similarity', 0)
 
     def add_product_affinity_user_tags(self):
+        """Add `tags` field to users.
+
+        Aggregate tags from user products and add an affinity
+        based on produst's affinity to users and density of each
+        tag for each product.
+
+        The affinity of each tag to user calculates as follows:
+
+        each tag has a list (Nj) contains tuples of the density of that tag
+        to a user product and the affinity of that product to the user
+
+        the final affinity is calculated based on following formula:
+
+        aff(t(j)) = [Sigma(i=0 -> Nj) dens(i)*affinity(i)]/Nj + Nj/Sigma(j=0 -> M) Nj 
+
+        """
         for u in self.users:
             tags = defaultdict(list)
             user_products = u['products']
@@ -154,7 +170,7 @@ class User(Product):
                 # reduce the stat_factor if user has downloaded the product but doesn't rate.
                 stat_factor = stat_factor * 3 / 4
             if share:
-                # increase the stat_factor in case the user has shared the product
+                # increase the stat_factor in case the user has shared the product.
                 stat_factor = stat_factor * 4 / 3
 
         elif status.lower() == 'view':
