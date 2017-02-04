@@ -3,4 +3,4 @@
 
 class Personalize:
     def __init__(self, *args, **kwargs):
-        pass
+        self.user = kwargs['user']

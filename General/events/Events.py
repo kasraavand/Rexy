@@ -5,6 +5,8 @@ import json
 
 
 class Event:
+    """General event based recommendations."""
+
     def __init__(self, *args, **kwargs):
         wordnet_name = kwargs['wordnet_name']
         db_name = kwargs['db_name']
