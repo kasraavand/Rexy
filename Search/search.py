@@ -1,6 +1,6 @@
-"""Proper personalized result for user search."""
+"""Proper personalized and similar result for user search."""
 
 
-class Personalize:
+class Search:
     def __init__(self, *args, **kwargs):
         self.user = kwargs['user']

@@ -8,19 +8,19 @@ class Event:
     """General event based recommendations."""
 
     def __init__(self, *args, **kwargs):
-        wordnet_name = kwargs['wordnet_name']
         db_name = kwargs['db_name']
-        self.wordnet = self.load_wordnet(wordnet_name)
+        self.wordnet = self.load_wordnet()
         self.importer = pre_analyzed_importer.PreImporter(db_name=db_name)
         self.all_products = self.load_products()
+        # Number of products to be suggested for events.
         self.product_number = kwargs['product_number']
 
     def load_products(self):
         all_products = [i[2] for i in self.importer.import_product()]
         return all_products
 
-    def load_wordnet(self, wordnet_name):
-        with open(wordnet_name) as f:
+    def load_wordnet(self, wordnet_path):
+        with open("wipazuka/PersianEventWordNet.json") as f:
             return json.load(f)
 
     def find_top_products(self):
@@ -39,8 +39,9 @@ class Event:
         key_words = set(key_words)
         # Ratio of common (event and people) tags to unions.
         common_tags = tags.keys() & key_words
-        tag_factor = len(common_tags) / len(tags.keys() | key_words)
-        density = sum(t / max_tag_density for t in common_tags) / len(common_tags)
+        tag_factor = len(common_tags) / len(tags.keys() | key_words)  # < 1
+        # calculate density
+        density = sum(tags[t] / max_tag_density for t in common_tags) / len(common_tags)
         affinity = tag_factor * density
         return affinity
 

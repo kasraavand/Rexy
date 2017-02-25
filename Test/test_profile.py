@@ -7,6 +7,8 @@ from Rexy.Profile.similar.RFY.user_profile import Recommendation
 from Rexy.Profile.similar.RFY.product_profile import Recommendation as PPRecommendation
 from Rexy.Core.similar.pre_analyzer import (User as pre_user_analyzer,
                                             Product as pre_product_analyzer)
+
+from Rexy.General.Events import Event
 import random
 import raw_data
 from UPeT.exporter import raw_exporter
@@ -124,6 +126,10 @@ def user_profile():
             json.dump(top_l2, f, indent=4)
             json.dump(['####' * 10], f, indent=4)
 
+    products = [p[2] for p in importer.import_product()]
+    with open('product.json', 'w') as f1:
+        json.dump([{'tags': p['tags'], 'id': p['id']} for p in products], f1, indent=4)
+
 
 def product_profile():
     importer = pre_analyzed_importer.PreImporter(db_name='pre_analyze')
@@ -145,8 +151,12 @@ def product_profile():
         json.dump({'tags': user['tags'], 'id': user['id']}, f2, indent=4)
         json.dump([{'tags': i['tags'], 'id': i['id']} for i in recom_prods if isinstance(i, dict)], f3, indent=4)
 
+
+def event():
+    event = Event(db_name='pre_analyze')
+
+
 if __name__ == '__main__':
     # initialize()
-    # user_profile()
+    user_profile()
     # product_profile()
-

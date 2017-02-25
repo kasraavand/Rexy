@@ -15,8 +15,3 @@ class Top:
     def find_top(self):
         products = [(p['id'], p['rating'], p['download_number']) for p in self.all_products]
         return sorted(products, key=itemgetter(1, 2))[:self.top_n]
-
-
-class all_top:
-    def __init__(self,):
-        pass
