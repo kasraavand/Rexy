@@ -61,7 +61,7 @@ class Recommendation:
                 user_products = user['products']
                 for product in user_products:
                     aff = product['affinity']
-                    product = next(p for p in self.all_products if p['id'] == product['id']) 
+                    product = next(p for p in self.all_products if p['id'] == product['id'])
                     similarity = self.independent_product_similarity(self.user, aff, product, sim, diff)
                     self.user_profile['user_similarity']['level_1'][product['id']] = similarity
                     for pid, d in product['sim_products'].items():

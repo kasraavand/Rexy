@@ -42,7 +42,7 @@ class Event:
         tag_factor = len(common_tags) / len(tags.keys() | key_words)  # < 1
         # calculate density
         density = sum(tags[t] / max_tag_density for t in common_tags) / len(common_tags)
-        affinity = tag_factor * density
+        affinity = tag_factor * density1
         return affinity
 
 
