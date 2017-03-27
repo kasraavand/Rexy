@@ -156,32 +156,4 @@ if __name__ == '__main__':
     # initialize()
     user_profile()
     # product_profile()
-
-
-from collections import OrderedDict
-from operator import itemgetter
-
-
-class LimitedSizeOrderedDict(OrderedDict):
-    def __init__(self, *args, **kwds):
-        self.maxlen = kwds.pop("maxlen", None)
-        super(LimitedSizeOrderedDict, self).__init__(*args, **kwds)
-        if args:
-            top_n = sorted(args, itemgetter(0))[:self.maxlen]
-            self.min_key = top_n[0]
-        else:
-            self.min_key = (float("-inf"), 0)
-    def __setitem__(self, key, value):
-        if self._check_size():
-            OrderedDict.__setitem__(self, key, value)
-            key[0] > self.min_key[0]:
-                self.min_key = key
-        elif key[0] > self.min_key:
-            self.pop(min_key)
-            OrderedDict.__setitem__(self, key, value)
-    def _check_size(self):
-        if self.maxlen is not None:
-            if len(self) < self.maxlen:
-                return True
-            return False
-        return True
+ 
