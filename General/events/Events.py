@@ -1,4 +1,3 @@
-from UPeT.importer import pre_analyzed_importer
 from operator import itemgetter
 from Rexy.config import max_tag_density
 import json
@@ -8,12 +7,10 @@ class Event:
     """General event based recommendations."""
 
     def __init__(self, *args, **kwargs):
-        db_name = kwargs['db_name']
         self.wordnet = self.load_wordnet()
-        self.importer = pre_analyzed_importer.PreImporter(db_name=db_name)
         self.all_products = self.load_products()
         # Number of products to be suggested for events.
-        self.product_number = kwargs['product_number']
+        self.product_number = kwargs['event_product_number']
 
     def load_products(self):
         all_products = [i[2] for i in self.importer.import_product()]
@@ -24,8 +21,9 @@ class Event:
             return json.load(f)
 
     def find_top_products(self):
+        """Find the most related products for each event."""
         for d in self.wordnet:
-            key_words = d['key_words']
+            key_words = d.pop('key_words')
             prod_with_aff = []
             for product in self.all_products:
                 tags = product['tags']
@@ -42,7 +40,7 @@ class Event:
         tag_factor = len(common_tags) / len(tags.keys() | key_words)  # < 1
         # calculate density
         density = sum(tags[t] / max_tag_density for t in common_tags) / len(common_tags)
-        affinity = tag_factor * density1
+        affinity = tag_factor * density
         return affinity
 
 
