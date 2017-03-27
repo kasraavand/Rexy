@@ -1,6 +1,5 @@
 """Novel products for users."""
 
-from UPeT.importer import pre_analyzed_importer
 from datetime import datetime, timedelta
 from .Rexy import config
 from operator import itemgetter
@@ -12,9 +11,7 @@ class Novel:
     def __init__(self, *args, **kwargs):
         self.top_n = kwargs['novel_number']
         self.days = kwargs['novel_days']
-        pre_analyzed_db_name = kwargs['pre_analyzed_db_name']
-        pre_importer = pre_analyzed_importer.PreImporter(db_name=pre_analyzed_db_name)
-        self.all_products = pre_importer.import_products()
+        self.all_products = kwargs['all_products']
 
     def find_novels(self):
         products = [(p['id'],
