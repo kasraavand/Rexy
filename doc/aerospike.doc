@@ -1,0 +1,27 @@
+# starting the service:
+
+sudo /etc/init.d/aerospike start
+
+# stoping:
+
+sudo /etc/init.d/aerospike stop
+
+# restart:
+
+sudo /etc/init.d/aerospike restart
+
+
+# Removing a namespace or set:
+
+eg. asinfo -v "set-config:context=namespace;id=raw_data;set=user;set-delete=true;"
+
+# Note: after each operation the database should be restart
+
+
+run client shell
+
+# aql
+
+doc for aql
+
+# http://www.aerospike.com/docs/tools/aql/data_management.html
