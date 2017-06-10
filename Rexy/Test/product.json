@@ -1,0 +1,93 @@
+[
+    {
+        "id": "game_1",
+        "tags": {
+            "Padel": 1,
+            "bad": 3,
+            "Footbag net": 2,
+            "Throwball": 4
+        }
+    },
+    {
+        "id": "game_0",
+        "tags": {
+            "mysterious": 1,
+            "large": 2,
+            "embarrassed": 1,
+            "great": 1,
+            "angry": 4
+        }
+    },
+    {
+        "id": "app_2",
+        "tags": {
+            "lazy": 3,
+            "nervous": 1,
+            "defeated": 3
+        }
+    },
+    {
+        "id": "app_7",
+        "tags": {
+            "repulsive": 1,
+            "Biribol": 1,
+            "New": 1
+        }
+    },
+    {
+        "id": "app_4",
+        "tags": {
+            "repulsive": 4,
+            "important": 3,
+            "Padel": 1,
+            "fierce": 3,
+            "New": 4,
+            "bad": 3
+        }
+    },
+    {
+        "id": "app_6",
+        "tags": {
+            "repulsive": 2,
+            "worried": 4,
+            "young": 3
+        }
+    },
+    {
+        "id": "app_9",
+        "tags": {
+            "clumsy": 1,
+            "embarrassed": 4,
+            "great": 1,
+            "few": 4,
+            "Good": 4
+        }
+    },
+    {
+        "id": "game_8",
+        "tags": {
+            "public": 3,
+            "great": 2,
+            "fierce": 1
+        }
+    },
+    {
+        "id": "game_5",
+        "tags": {
+            "repulsive": 4,
+            "Padel": 3,
+            "Ball badminton": 3,
+            "Badminton": 3,
+            "Long": 4
+        }
+    },
+    {
+        "id": "app_3",
+        "tags": {
+            "grumpy": 2,
+            "Fistball": 2,
+            "jealous": 2,
+            "bewildered": 3
+        }
+    }
+]
