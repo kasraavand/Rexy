@@ -76,12 +76,16 @@ The similar recommendations are based on the similarities between the common pro
 
  - Top N Picks For You
 
-At this section, we find the top N products from all the aforementioned parts. 
+At this section, we find the top N products from all the aforementioned parts.
 
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Search**
 
-The searc module is responsible for recommendations during the search process by user.
+The search module is responsible for recommendations during the search process by user. Based on user's in case that the searched products are exist in database, we can show the related products based on some manual policies. In case the word doesn't exist in our database, we can use a prepared list of product names which are tagged properly in order to find the related products and show them to the user. This prepared list of products can be a scraped file or something similar. Another way around this is to ask the users to enter/select some related tags to the searched product and find the similar products based on them.
+
+If the user is a logged in user with a history of activity, in case that the searched word doesn't exist in our database, we can recommend a list of products related to the latest users activities top products the most recently searched product, top popular product among the similar users to the user or other different methods.
+
+
  -----------
  
 
