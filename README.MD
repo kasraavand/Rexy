@@ -1,7 +1,11 @@
 ## Preamble
 
 
-**Rexy** (rec-sy) is an open-source recommendation system based on a general User-Product-Tag schema and a flexible structure that has been designed to be adaptable with variant data-schema. The underlying codes are entirely written in Python-3.5 in a highly optimized, Pythonic and comprehensive way, that makes it so flexible against changes. It also used [Aerospike](http://www.aerospike.com/) as the database engine which is a high speed, scalable, and reliable NoSQL database.
+**Rexy** (rec-sy) is an open-source recommendation system based on a general User-Product-Tag schema and a flexible structure that has been designed to be adaptable with variant data-schema. There are a lot of methods and ways that Rexy is used to recommend the products to users. This is contain general recommendations like top products, even based recommendations and Novel products that the user might be interested in. There are other recommendations that are directly related to the user's activities or other users that have a similar behavior as the given user.
+
+Along side the recommendations that are related to user's interests there are also some modules designed to find the most proper products based on other factors like advertisement, social, etc. and don't have the side effects of a commercial advertisement systems. For instance, `Email` and `Search` modules are designed to support such goals.
+
+The underlying codes are entirely written in Python-3.5 in a highly optimized, Pythonic and comprehensive way, that makes it so flexible against changes. It also used [Aerospike](http://www.aerospike.com/) as the database engine which is a high speed, scalable, and reliable NoSQL database.
 
  ----------
 
@@ -46,9 +50,34 @@ The logging module that keeps track of the errors and exceptions that happens in
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Profile**
 
-`Profile` is almost the widest module in Rexy. It's responsible of every profile in our platform, include user profile, product profile, provider profile, etc.
+`Profile` is almost the widest module in Rexy. It's responsible of every profile in your platform, include user profile, product profile, provider profile, etc.
 
-For a given profile we can show a diverse set of recommendations like the `Top Products`, `Top N Picks For You`, `Recommendations for you`, etc.
+For a given profile we can show a diverse set of recommendations which are as follows:
+
+ - Top Products
+
+Top products of all time, based on user's interest and other purposes.
+ 
+ - Novel Products
+
+Favorite products during the latest N month/week, based on user's interest and other purposes.
+
+ - Event-based recommendations
+
+Products related to the current events, based on user's interest and other purposes.
+
+ - Recommendations For You
+
+In this part we suggest the products that are based on user's activities or the user's that have similar activities to the given user. Both of these recommendations fall under two accurate and similar categories.
+
+The accurate recommendations are basically based on the common tags among the products. Finding the intersected tags can be done in two level the first one is related to the products that are directly related to the user's products and second one is related to the products that are similar to the similar products of our products.
+
+The similar recommendations are based on the similarities between the common products and similar users in which these similarities are calculated based on the tag densities, common tags, different tags, and some other influential factors. 
+
+ - Top N Picks For You
+
+At this section, we find the top N products from all the aforementioned parts. 
+
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Search**
 
