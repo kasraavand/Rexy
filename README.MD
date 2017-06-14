@@ -86,6 +86,16 @@ The search module is responsible for recommendations during the search process b
 If the user is a logged in user with a history of activity, in case that the searched word doesn't exist in our database, we can recommend a list of products related to the latest users activities top products the most recently searched product, top popular product among the similar users to the user or other different methods.
 
 
+# Requirements
+
+The Require 
+
+# Rexy is large an powerful enough, but can we make it more stronger?
+
+Indeed, using Python's state-of-the-art scientific programming tools, such as Numpy, Pandas, scikit-learn in order to harness the power of machine learning algorithms in the most optimized way. Also the structure can be expanded to be able to satisfy the further needs of your system. That's what we call XTRex (Xenomorph Tyrannosaurus Rex).
+
+![image](https://user-images.githubusercontent.com/5694520/27120053-61c5e9e0-50f7-11e7-828a-e375e7766f7a.png
+
  -----------
  
 
