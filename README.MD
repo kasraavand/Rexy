@@ -7,6 +7,12 @@ Along side the recommendations that are related to user's interests there are al
 
 The underlying codes are entirely written in Python-3.5 in a highly optimized, Pythonic and comprehensive way, that makes it so flexible against changes. It also used [Aerospike](http://www.aerospike.com/) as the database engine which is a high speed, scalable, and reliable NoSQL database.
 
+ -----------
+ 
+
+![26c982832302ac96d00bab52acbd6537](https://cloud.githubusercontent.com/assets/5694520/20237512/bd2790b0-a8e9-11e6-865d-a9f2be1f5ff2.jpg)
+
+
  ----------
 
  # Structure and Features
@@ -96,8 +102,3 @@ Indeed, using Python's state-of-the-art scientific programming tools, such as Nu
 
 ![image](https://user-images.githubusercontent.com/5694520/27120053-61c5e9e0-50f7-11e7-828a-e375e7766f7a.png)
 
-
- -----------
- 
-
-![26c982832302ac96d00bab52acbd6537](https://cloud.githubusercontent.com/assets/5694520/20237512/bd2790b0-a8e9-11e6-865d-a9f2be1f5ff2.jpg)
