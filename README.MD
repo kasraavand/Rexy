@@ -3,9 +3,9 @@
 
 *Rexy* (rec-sy) is an open-source recommendation system based on a general User-Product-Tag concept and a flexible structure that has been designed to be adaptable with variant data-schema. There are a lot of methods and ways that *Rexy* has used to recommend the products to users. This is consist of general recommendations like *Top products*, *event based recommendations* and *Novel products* that the user might be interested in. There are other recommendations that are directly related to the user's activities or other users that have a similar behavior to the given user.
 
-Along side the recommendations that are related to user's interests there are also some modules designed to find the most proper products based on other factors like *advertisement*, *social factors*, *gamification*, etc. and don't have the side effects of a commercial advertisement system. These modules are  Email and Search modules which are designed to support such goals.
+Alongside the recommendations that are related to the user's interests, there are also some modules designed to find the most proper products based on other factors like *advertisement*, *social factors*, *gamification*, etc. and don't have the side effects of a commercial advertisement system. `Email` and `Search` modules are designed to support such goals.
 
-The underlying codes are entirely written in Python-3.5 in a highly optimized, *Pythonic* and comprehensive way, that makes it so flexible against changes. It also used  [Aerospike](http://www.aerospike.com) as the database engine which is a high speed, scalable, and reliable NoSQL database.
+The underlying codes are entirely written in Python-3.5 in a highly optimized, *Pythonic* and comprehensive way that makes it so flexible against the changes. It also used [Aerospike](http://www.aerospike.com) as the database engine which is a high speed, scalable, and reliable NoSQL database.
 
  -----------
  
@@ -21,17 +21,17 @@ The underlying codes are entirely written in Python-3.5 in a highly optimized, *
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Administration**
 
-This module is supposed to handle the administration tasks. But what are administration tasks. In general, these tasks are those that we need for management of the users and products. This can be consist of visualizing the features, extracting a specific information about a user or product, demonstrations the long term or short term changes in a special feature regard a given entity.
+This module is supposed to handle the administration tasks. But what are administration tasks? In general, these tasks are those that we need for management of the users and products. This can be consist of visualizing the features, extracting a specific information about a user or product, demonstrating the long or short term changes regard a special feature of a given entity or other activities as such.
 
-This directory is contain following modules:
+This module is contain the following submodules:
 
  - Analyzer
 
-Retrieving and managing the information regard the entities.
+Retrieving and managing the information regard the entities. Such informations, may be used in variant ways such as giving a report to the providers regard their products, finding the popularity of a given product among the users (which can be used in a lot of ways too), estimating the popularity of a new products in our platform, and other purposes as such.
 
  - Visualizer
 
-Visualizing the data features along a specific variable or just comparing different features regard one or different entity.
+Using this module we can do the *Analyzer*'s tasks in a visualized manner. Sometimes we just need to take a glance and figure out a specific information about a particular entity or group of them. In that case *Visualizer* module it what you want.
 
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Core** 
@@ -40,13 +40,13 @@ Visualizing the data features along a specific variable or just comparing differ
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Email**
 
-This modules is designed to handle the recommendations through the *Email*. Emails are basically sent on a weekly/monthly basis, which means that the users have a fewer interaction with. This makes it a proper place for advertisements and going a little bit further than the customized recommendation’s restrictions. Therefore, this module tends to use more diverse and unpopular products. In its periodic recommendations.
+This module is designed to handle the recommendations through the *Email*. Emails are basically sent on a weekly/monthly basis, which means that the users have a fewer interaction with. This makes it a proper place for advertisements and going a little bit further than the customized recommendation’s restrictions. Therefore, this module tends to use more diverse and unpopular products in its periodic recommendations.
 
  Also, in addition to the aforementioned features, in Emails we have more options and space for our recommendations (compare to a profile page which is almost filled with other informations), which makes it possible to involve the new types of recommendations in the future. Hence, this module has been designed in a way to be as flexible as possible against such new changes. 
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **General**
 
-There are also some kind of recommendations that are not specifically personalized for users or products. These are consist of Novel, Top and Event recommendations. The results of these modules, regardless of the subject of the page that we're  planning to show them, can be used for general or personal recommendations. For example, within a home page for everyone or even for not logged-in users on welcome page. 
+There are also some kind of recommendations that are not specifically personalized for users or products. These are consist of *Novel*, *Top* and *Event* recommendations. The results of these modules, regardless of the subject of the page that we're  planning to show them, can be used for general or personal recommendations. For example, within a home page for everyone or even for not logged-in users on welcome page. 
 
  - Novel
  
@@ -54,13 +54,11 @@ This module is supposed to find the most popular products within a newly certain
 
   - Top
   
-Alongside the newly favorite products we also need to find the all-time popular products among the users. That's exactly what this module stands for.
+Alongside the Novel products we also need to find the all-time popular products among the users. That's exactly what this module stands for.
 
   - Event
   
-Sometimes we need to go further than regular and common recommendation types, that's where the modules like Event 
-
-come in. This module finds the most relevant products specially for users and in general based on the events on a given calendar. This module is used [Wipazuka](https://github.com/kasramvd/Wipazuka) a multilingual calendar-based WordNet to finds the intended products based on events.
+Sometimes we need to go further than regular and common recommendation types, that's where the modules like Event come in. This module finds the most relevant products specially for users and in general, based on the events on a specific calendar. This module has used [Wipazuka](https://github.com/kasramvd/Wipazuka) a multilingual calendar-based WordNet to find the intended products based on events.
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Logging**
 
