@@ -62,11 +62,11 @@ Sometimes we need to go further than regular and common recommendation types, th
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Logging**
 
-The logging module that keeps track of the errors and exceptions that happens in the whole application.
+The logging module that keeps track of the errors and exceptions that are happened within the whole application.
 
  ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) **Profile**
 
-Profile is almost the widest module in *Rexy*. It's responsible of every profile in your platform, include user profile, product profile, provider profile, etc.
+*Profile* is almost the widest module in *Rexy*. It's responsible for every profile in your platform, include *User Profile*, *Product Profile*, *Provider Profile*, etc.
 
 For a given profile we can show a diverse set of recommendations which are as follows:
 
@@ -76,7 +76,7 @@ Top products of all time, based on user's interest and other purposes.
  
  - Novel Products
 
-Favorite products during the latest N month/week, based on user's interest and other purposes.
+Favorite products during the latest N month/week, based on the user's interest and other purposes.
 
  - Event-based recommendations
 

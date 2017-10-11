@@ -19,7 +19,7 @@ class Reporter:
         return filter(lambda user: user['product_similarity'].get(pid, 0) >= likelihood, self.all_users)
 
     def user_interest(self, uid, plot=False):
-        """Give a list of the given user's interests in form of tags and a degree."""
+        """returns a list of the given user's interests in form of tags and a degree."""
         user = next(u for u in self.all_users if u['id'] == uid)
         tags = user['tags']
         if plot:

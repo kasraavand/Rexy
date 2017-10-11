@@ -1,3 +1,4 @@
+"""Find recomendations based on user's latest activities."""
 from UPeT.importer import pre_analyzed_importer
 from itertools import chain
 from datetime import datetime, timedelta

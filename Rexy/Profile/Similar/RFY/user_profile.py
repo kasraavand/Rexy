@@ -75,6 +75,7 @@ class Recommendation:
             sim = cal_sim_product(p['tags'],
                                   product['tags'],
                                   return_diff=False)
+            # all_similarities needs to be migrated
             all_similarities.append(sim)
         top_n_nonzeros = list(filter(bool, sorted(all_similarities)[-3:]))
         sim_sum = sum(sim * i * 7 for i, sim in enumerate(top_n_nonzeros))
