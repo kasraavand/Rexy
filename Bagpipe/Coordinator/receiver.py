@@ -30,5 +30,6 @@ def get_products():
         json.dump(results, f, indent=4)
     return jsonify("{'status': True}")
 
+
 if __name__ == '__main__':
     app.run(debug=True, port=80)
