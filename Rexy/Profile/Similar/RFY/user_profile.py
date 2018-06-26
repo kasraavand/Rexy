@@ -1,4 +1,4 @@
-from UPeT.importer import pre_analyzed_importer
+from Bagpipe.importer import pre_analyzed_importer
 from Rexy.Core.general import cal_sim_product
 from Rexy.Core.similar.pre_analyzer import Product as prodclass
 from Rexy.Logging import logger

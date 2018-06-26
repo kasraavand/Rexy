@@ -11,8 +11,8 @@ from Rexy.Core.similar.pre_analyzer import (User as pre_user_analyzer,
 from Rexy.General.Events import Event
 import random
 import raw_data
-from UPeT.exporter import raw_exporter
-from UPeT.importer import pre_analyzed_importer
+from Bagpipe.exporter import raw_exporter
+from Bagpipe.importer import pre_analyzed_importer
 from itertools import tee
 from operator import itemgetter
 import json

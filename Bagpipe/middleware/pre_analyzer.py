@@ -1,6 +1,6 @@
-from UPeT.importer import raw_importer, pre_analyzed_importer
+from Bagpipe.importer import raw_importer, pre_analyzed_importer
 from itertools import product as prod, combinations, chain
-from UPeT.exporter import pre_analyzed_exporter
+from Bagpipe.exporter import pre_analyzed_exporter
 from Rexy.Core.general import cal_sim_product
 from statistics import median, mean
 from collections import defaultdict

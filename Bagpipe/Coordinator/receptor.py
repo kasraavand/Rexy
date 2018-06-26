@@ -1,7 +1,7 @@
-from UPeT.transmission import receiver
-from UPeT.middleware import pre_analyzer
-from UPeT.exporter import raw_exporter, analyzed_exporter
-from UPeT.importer import raw_importer
+from Bagpipe.transmission import receiver
+from Bagpipe.middleware import pre_analyzer
+from Bagpipe.exporter import raw_exporter, analyzed_exporter
+from Bagpipe.importer import raw_importer
 
 from Rexy.Profile.Similar.RFY import *
 from Rexy.General import *

@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 from flask import abort
 from flask import make_response
 from flask_httpauth import HTTPBasicAuth
-from UPeT.importer.analyzed_importer import Profile, General
+from Bagpipe.importer.analyzed_importer import Profile, General
 from config import APIlinks, api_username, api_password
 
 

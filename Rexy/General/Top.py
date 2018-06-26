@@ -1,5 +1,5 @@
 
-from UPeT.importer import pre_analyzed_importer
+from Bagpipe.importer import pre_analyzed_importer
 from operator import itemgetter
 
 

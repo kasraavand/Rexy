@@ -1,5 +1,5 @@
 """Required analyzing functions for administration."""
-from UPeT.importer.analyzed_importer import Profile, General
+from Bagpipe.importer.analyzed_importer import Profile, General
 from operator import itemgetter
 from iertools import chain
 from collections import defaultdict
