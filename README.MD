@@ -105,7 +105,7 @@ If the user is a logged in user with a history of activity, in case that the sea
 
 Indeed, using Python's state-of-the-art scientific programming tools, such as *Numpy*, *Pandas*, *scikit-learn* in order to harness the power of machine learning algorithms in the most optimized way. Also the structure can be expanded to be able to satisfy the further needs of your system. That's what we call XTRex (Xenomorph Tyrannosaurus Rex).
 
-Construction is in progress. Contributions in this direction are welcomed.
+Construction is in progress. Contributions on this direction are welcomed.
 
 
 ![image](https://user-images.githubusercontent.com/5694520/27120053-61c5e9e0-50f7-11e7-828a-e375e7766f7a.png)
