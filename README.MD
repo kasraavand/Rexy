@@ -1,7 +1,7 @@
 ## Preamble
 
 
-*Rexy* (rec-sy) is an open-source recommendation system based on a general User-Product-Tag concept and a flexible structure that has been designed to be adaptable with various data-schema. There are a lot of methods and ways that *Rexy* has used to recommend the products to users. This is consist of general recommendations like *Top products*, *event based recommendations* and *Novel products* that the user might be interested in. There are other recommendations that are directly related to the user's activities or other users that have a similar behavior to the given user.
+*Rexy* (rec-sy) is an open-source recommendation system based on a general User-Product-Tag concept and a flexible structure that has been designed to be adaptable with various data-schema. There are a lot of methods and ways that *Rexy* has used to recommend the products to users. This includes general recommendations like *Top products*, *event based recommendations* and *Novel products* that the user might be interested in. There are other recommendations that are directly related to the user's activities or other users that have a similar behavior to the given user.
 
 Alongside the recommendations that are related to the user's interests, there are also some modules designed to find the most proper products based on other factors like *advertisement*, *social factors*, *gamification*, etc. and don't have the side effects of a commercial advertisement system. `Email` and `Search` modules are designed to support such goals.
 
